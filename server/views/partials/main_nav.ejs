@@ -41,6 +41,14 @@
         </li>
 
         <li class="nav-item">
+          <% if(title == "Books") { %>
+            <a class="nav-link active" href="/book-list"> <i class="fas fa-book"></i> Books </a>
+          <% } else { %>
+            <a class="nav-link " href="/book-list"> <i class="fas fa-book"></i> Books </a>
+          <% } %>
+        </li>
+
+        <li class="nav-item">
           <% if(title == "Contact") { %>
             <a class="nav-link active" href="/contact"><i class="fas fa-address-book"></i> Contact </a>
           <% } else { %>
